@@ -5,4 +5,5 @@ from django.http import HttpResponse
 
 
 def portfolio_view(request):
-    return HttpResponse('<h1>MY PORTFOLIO</h1>')
+    return render(request, "portfolio/index.html", context={})
+    # return HttpResponse('<h1>MY PORTFOLIO</h1>')
